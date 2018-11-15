@@ -13,6 +13,7 @@ public class IotDevice {
 	private int hobCount;
 	private String operationType;
 	private Device devices;
+	private String shoptestPath;
 
 	public IotDevice() {
 	}
@@ -25,7 +26,7 @@ public class IotDevice {
 		this.connectedCordinate = connectedCordinate;
 		this.hobCount = hobCount;
 		this.operationType = operationType;
-		this.devices =  devices;
+		this.devices = devices;
 	}
 
 	private String deviceId;
@@ -84,6 +85,14 @@ public class IotDevice {
 
 	public void setDevices(Device devices) {
 		this.devices = devices;
+	}
+
+	public String getShoptestPath() {
+		return shoptestPath;
+	}
+
+	public void setShoptestPath(String shoptestPath) {
+		this.shoptestPath = shoptestPath;
 	}
 
 }

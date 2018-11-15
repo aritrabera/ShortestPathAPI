@@ -28,7 +28,8 @@ public class Controller {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@GetMapping(path = "/getCall", consumes = "application/json", produces = { MediaType.APPLICATION_JSON_VALUE,
 			MediaType.APPLICATION_XML_VALUE })
-	public @ResponseBody List<IotDevice> getCall(@RequestBody List<IotDevice> iotDevice) {
+	public String getCall(@RequestBody List<IotDevice> iotDevice) {
+		//public @ResponseBody List<IotDevice> getCall(@RequestBody List<IotDevice> iotDevice) {
 		// Check if the user has submitted initial form or moved a device to a new
 		// position
 		// if modeOfOperation = ***initial ***
@@ -67,7 +68,7 @@ public class Controller {
 		iotDevices.setyCoordinate("12.2");
 		List<IotDevice> testIotDevice = new ArrayList<>();
 		testIotDevice.add(iotDevices);
-		return testIotDevice;
+		return "testIotDevice";
 	}
 
 	/*
@@ -77,21 +78,22 @@ public class Controller {
 	@RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@PostMapping(path = "/postCall")
-	public @ResponseBody List<IotDevice> postCall(@RequestBody ConnectedCordinate connectedCordinate) {
-		IotDevice iotDevice = new IotDevice();
+	public String postCall(@RequestBody List<IotDevice> iotDevice) {
+		//public @ResponseBody List<IotDevice> postCall(@RequestBody List<IotDevice> iotDevice) {
+		IotDevice iotDevices = new IotDevice();
 		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
 		connectedCordinates.setxCoordinate("123");
 		connectedCordinates.setyCoordinate("123");
 		List<ConnectedCordinate> connectedCordinates2 =  new ArrayList<>();
 		connectedCordinates2.add(connectedCordinates);
-		iotDevice.setConnectedCordinate(connectedCordinates2);
-		iotDevice.setDeviceId("Laptop");
-		iotDevice.setHobCount(2);
-		iotDevice.setxCoordinate("22.3");
-		iotDevice.setyCoordinate("12.2");
+		iotDevices.setConnectedCordinate(connectedCordinates2);
+		iotDevices.setDeviceId("Laptop");
+		iotDevices.setHobCount(2);
+		iotDevices.setxCoordinate("22.3");
+		iotDevices.setyCoordinate("12.2");
 		List<IotDevice> testIotDevice = new ArrayList<>();
-		testIotDevice.add(iotDevice);
-		return testIotDevice;
+		testIotDevice.add(iotDevices);
+		return "testIotDevice";
 	}
 
 }

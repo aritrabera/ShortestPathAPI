@@ -28,7 +28,7 @@ public class Controller {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@GetMapping(path = "/getCall", consumes = "application/json", produces = { MediaType.APPLICATION_JSON_VALUE,
 			MediaType.APPLICATION_XML_VALUE })
-	public @ResponseBody List<IotDevice> getCall(@RequestBody List<ConnectedCordinate> connectedCordinate) {
+	public @ResponseBody List<IotDevice> getCall(@RequestBody List<IotDevice> iotDevice) {
 		// Check if the user has submitted initial form or moved a device to a new
 		// position
 		// if modeOfOperation = ***initial ***
@@ -36,7 +36,7 @@ public class Controller {
 		// default coordinates and shortest path 
 		// else if modeOfOperation = ***reposition ***
 		// then follow second iteration of shortest path
-		String modeOfOperation = connectedCordinate.get(0).getOperationType();
+	/*	String modeOfOperation = connectedCordinate.get(0).getOperationType();
 		if (!connectedCordinate.isEmpty()) {
 			if (!StringUtils.isEmpty(modeOfOperation) && modeOfOperation.equalsIgnoreCase("initial")) {
 
@@ -53,15 +53,20 @@ public class Controller {
 			}
 		} else {
 
-		}
-		IotDevice iotDevice = new IotDevice();
-		// iotDevice.setConnectedCordinate(connectedCordinate);
-		iotDevice.setDeviceId("Laptop");
-		iotDevice.setHobCount(2);
-		iotDevice.setxCoordinate("22.3");
-		iotDevice.setyCoordinate("12.2");
+		}*/
+		IotDevice iotDevices = new IotDevice();
+		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
+		connectedCordinates.setxCoordinate("123");
+		connectedCordinates.setyCoordinate("123");
+		List<ConnectedCordinate> connectedCordinates2 =  new ArrayList<>();
+		connectedCordinates2.add(connectedCordinates);
+		iotDevices.setConnectedCordinate(connectedCordinates2);
+		iotDevices.setDeviceId("Laptop");
+		iotDevices.setHobCount(2);
+		iotDevices.setxCoordinate("22.3");
+		iotDevices.setyCoordinate("12.2");
 		List<IotDevice> testIotDevice = new ArrayList<>();
-		testIotDevice.add(iotDevice);
+		testIotDevice.add(iotDevices);
 		return testIotDevice;
 	}
 
@@ -72,15 +77,20 @@ public class Controller {
 	@RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@PostMapping(path = "/postCall")
-	public @ResponseBody List<IotDevice> postCall(@RequestBody ConnectedCordinate connectedCordinate) {
-		IotDevice iotDevice = new IotDevice();
-		iotDevice.setConnectedCordinate(connectedCordinate);
-		iotDevice.setDeviceId("Laptop");
-		iotDevice.setHobCount(2);
-		iotDevice.setxCoordinate("22.3");
-		iotDevice.setyCoordinate("12.2");
+	public @ResponseBody List<IotDevice> postCall(@RequestBody List<IotDevice> iotDevice) {
+		IotDevice iotDevices = new IotDevice();
+		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
+		connectedCordinates.setxCoordinate("123");
+		connectedCordinates.setyCoordinate("123");
+		List<ConnectedCordinate> connectedCordinates2 =  new ArrayList<>();
+		connectedCordinates2.add(connectedCordinates);
+		iotDevices.setConnectedCordinate(connectedCordinates2);
+		iotDevices.setDeviceId("Laptop");
+		iotDevices.setHobCount(2);
+		iotDevices.setxCoordinate("22.3");
+		iotDevices.setyCoordinate("12.2");
 		List<IotDevice> testIotDevice = new ArrayList<>();
-		testIotDevice.add(iotDevice);
+		testIotDevice.add(iotDevices);
 		return testIotDevice;
 	}
 
