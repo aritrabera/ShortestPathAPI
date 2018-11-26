@@ -1,7 +1,5 @@
 package ari.unr.root.pojo;
 
-import java.util.List;
-
 public class Device {
 
 	public Device() {
@@ -9,10 +7,10 @@ public class Device {
 
 	private String deviceName;
 	private String deviceCount;
-	private List<String> xCoordinate;
-	private List<String> yCoordinate;
+	private Double xCoordinate;
+	private Double yCoordinate;
 	private int hobCount;
-
+	
 	public String getDeviceName() {
 		return deviceName;
 	}
@@ -29,28 +27,29 @@ public class Device {
 		this.deviceCount = deviceCount;
 	}
 
-	public List<String> getxCoordinate() {
-		return xCoordinate;
-	}
-
-	public void setxCoordinate(List<String> xCoordinate) {
-		this.xCoordinate = xCoordinate;
-	}
-
-	public List<String> getyCoordinate() {
-		return yCoordinate;
-	}
-
-	public void setyCoordinate(List<String> yCoordinate) {
-		this.yCoordinate = yCoordinate;
-	}
-
+	
 	public int getHobCount() {
 		return hobCount;
 	}
 
 	public void setHobCount(int hobCount) {
 		this.hobCount = hobCount;
+	}
+
+	public Double getxCoordinate() {
+		return xCoordinate;
+	}
+
+	public void setxCoordinate(Double xCoordinate) {
+		this.xCoordinate = xCoordinate;
+	}
+
+	public Double getyCoordinate() {
+		return yCoordinate;
+	}
+
+	public void setyCoordinate(Double yCoordinate) {
+		this.yCoordinate = yCoordinate;
 	}
 
 }

@@ -1,7 +1,5 @@
 package ari.unr.ops;
 
-import java.text.DecimalFormat;
-
 // A Java program for Dijkstra's 
 // single source shortest path 
 // algorithm. The program is for 
@@ -158,20 +156,8 @@ class TestAlgo {
 									{ 0, 0, 0, 14, 0, 2, 0, 1, 6 }, 
 									{ 8, 11, 0, 0, 0, 0, 1, 0, 7 }, 
 									{ 0, 0, 2, 0, 0, 0, 6, 7, 0 } }; 
-		dijkstra(adjacencyMatrix, 0);
-		
+		dijkstra(adjacencyMatrix, 0); 
 	} 
-	
-	
-public static Double distanceBetweenTwoPoint(Double x1,Double y1,Double x2,Double y2){
-	double xDiff =  ((x1) - (x2));
-	double yDiff = (y1) - (y2);
-	DecimalFormat decimalFormat = new DecimalFormat("#.##");   
-	
-	return Double.valueOf(decimalFormat.format(Math.sqrt(xDiff * xDiff + yDiff * yDiff)));
-	
-		
-	}
 } 
 
 // This code is contributed by Harikrishnan Rajan 

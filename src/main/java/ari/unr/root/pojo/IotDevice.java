@@ -7,8 +7,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class IotDevice {
 
-	private String xCoordinate;
-	private String yCoordinate;
+	private Double xCoordinate;
+	private Double yCoordinate;
 	private List<ConnectedCordinate> connectedCordinate;
 	private int hobCount;
 	private String operationType;
@@ -19,7 +19,7 @@ public class IotDevice {
 	public IotDevice() {
 	}
 
-	public IotDevice(String deviceId, String xCoordinate, String yCoordinate,
+	public IotDevice(String deviceId, Double xCoordinate, Double yCoordinate,
 			List<ConnectedCordinate> connectedCordinate, int hobCount, String operationType, Device devices,
 			String deviceID) {
 		this.deviceId = deviceId;
@@ -42,21 +42,7 @@ public class IotDevice {
 		this.deviceId = deviceId;
 	}
 
-	public String getxCoordinate() {
-		return xCoordinate;
-	}
-
-	public void setxCoordinate(String xCoordinate) {
-		this.xCoordinate = xCoordinate;
-	}
-
-	public String getyCoordinate() {
-		return yCoordinate;
-	}
-
-	public void setyCoordinate(String yCoordinate) {
-		this.yCoordinate = yCoordinate;
-	}
+	
 
 	public int getHobCount() {
 		return hobCount;
@@ -105,5 +91,23 @@ public class IotDevice {
 	public void setDeviceID(String deviceID) {
 		this.deviceID = deviceID;
 	}
+
+	public Double getxCoordinate() {
+		return xCoordinate;
+	}
+
+	public void setxCoordinate(Double xCoordinate) {
+		this.xCoordinate = xCoordinate;
+	}
+
+	public Double getyCoordinate() {
+		return yCoordinate;
+	}
+
+	public void setyCoordinate(Double yCoordinate) {
+		this.yCoordinate = yCoordinate;
+	}
+
+	
 
 }

@@ -57,15 +57,15 @@ public class Controller {
 		}*/
 		IotDevice iotDevices = new IotDevice();
 		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
-		connectedCordinates.setxCoordinate("123");
-		connectedCordinates.setyCoordinate("123");
+		connectedCordinates.setxCoordinate(123.0);
+		connectedCordinates.setyCoordinate(123.0);
 		List<ConnectedCordinate> connectedCordinates2 =  new ArrayList<>();
 		connectedCordinates2.add(connectedCordinates);
 		iotDevices.setConnectedCordinate(connectedCordinates2);
 		iotDevices.setDeviceId("Laptop");
 		iotDevices.setHobCount(2);
-		iotDevices.setxCoordinate("22.3");
-		iotDevices.setyCoordinate("12.2");
+		iotDevices.setxCoordinate(22.3);
+		iotDevices.setyCoordinate(12.0);
 		List<IotDevice> testIotDevice = new ArrayList<>();
 		testIotDevice.add(iotDevices);
 		return "testIotDevice";
@@ -82,15 +82,15 @@ public class Controller {
 		//public @ResponseBody List<IotDevice> postCall(@RequestBody List<IotDevice> iotDevice) {
 		IotDevice iotDevices = new IotDevice();
 		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
-		connectedCordinates.setxCoordinate("123");
-		connectedCordinates.setyCoordinate("123");
+		connectedCordinates.setxCoordinate(123.0);
+		connectedCordinates.setyCoordinate(123.0);
 		List<ConnectedCordinate> connectedCordinates2 =  new ArrayList<>();
 		connectedCordinates2.add(connectedCordinates);
 		iotDevices.setConnectedCordinate(connectedCordinates2);
 		iotDevices.setDeviceId("Laptop");
 		iotDevices.setHobCount(2);
-		iotDevices.setxCoordinate("22.3");
-		iotDevices.setyCoordinate("12.2");
+		iotDevices.setxCoordinate(22.3);
+		iotDevices.setyCoordinate(12.2);
 		List<IotDevice> testIotDevice = new ArrayList<>();
 		testIotDevice.add(iotDevices);
 		return "testIotDevice";

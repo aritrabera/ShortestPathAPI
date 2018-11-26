@@ -11,6 +11,7 @@ public class Device {
 	private String deviceCount;
 	private List<String> xCoordinate;
 	private List<String> yCoordinate;
+	private int hobCount;
 
 	public String getDeviceName() {
 		return deviceName;
@@ -42,6 +43,14 @@ public class Device {
 
 	public void setyCoordinate(List<String> yCoordinate) {
 		this.yCoordinate = yCoordinate;
+	}
+
+	public int getHobCount() {
+		return hobCount;
+	}
+
+	public void setHobCount(int hobCount) {
+		this.hobCount = hobCount;
 	}
 
 }
