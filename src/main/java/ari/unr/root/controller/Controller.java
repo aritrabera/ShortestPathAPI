@@ -78,9 +78,9 @@ public class Controller {
 	@RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@PostMapping(path = "/postCall")
-	public String postCall(@RequestBody List<IotDevice> iotDevice) {
+	public List<IotDevice> postCall(@RequestBody List<IotDevice> iotDevice) {
 		//public @ResponseBody List<IotDevice> postCall(@RequestBody List<IotDevice> iotDevice) {
-		IotDevice iotDevices = new IotDevice();
+		/*IotDevice iotDevices = new IotDevice();
 		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
 		connectedCordinates.setxCoordinate(123.0);
 		connectedCordinates.setyCoordinate(123.0);
@@ -93,7 +93,35 @@ public class Controller {
 		iotDevices.setyCoordinate(12.2);
 		List<IotDevice> testIotDevice = new ArrayList<>();
 		testIotDevice.add(iotDevices);
-		return "testIotDevice";
+		return iotDevices;*/
+		// Check if the user has submitted initial form or moved a device to a new
+		// position
+		// if modeOfOperation = ***initial ***
+		// then follow initial workFlow for setting up initial devices with initial
+		// default coordinates and shortest path 
+		// else if modeOfOperation = ***reposition ***
+		// then follow second iteration of shortest path
+		List<IotDevice> iresultIotDevice =  null;
+		String modeOfOperation = iotDevice.get(0).getOperationType();
+		
+		if (!iotDevice.isEmpty()) {
+			if (!StringUtils.isEmpty(modeOfOperation) && modeOfOperation.equalsIgnoreCase("initial")) {
+
+				ShortestPathWorkFlow shortestPathWorkFlow = new ShortestPathWorkFlow();
+				iresultIotDevice = shortestPathWorkFlow.getShortestPathForAllDevices(iotDevice);
+
+			} else if (!StringUtils.isEmpty(modeOfOperation) && modeOfOperation.equalsIgnoreCase("reposition")) {
+
+				ShortestPathWorkFlow shortestPathWorkFlow = new ShortestPathWorkFlow();
+				iresultIotDevice = shortestPathWorkFlow.getShortestPathForOneDevice(iotDevice);
+
+			} else {
+
+			}
+		} else {
+
+		}
+		return iresultIotDevice;
 	}
 
 }

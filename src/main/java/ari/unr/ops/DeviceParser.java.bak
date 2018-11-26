@@ -10,7 +10,7 @@ import ari.unr.root.pojo.IotDevice;
 
 public class DeviceParser {
 
-	public static List<IotDevice> addDistanceToEachDevice(List<IotDevice> iotDevices) {
+	public void addDistanceToEachDevice(List<IotDevice> iotDevices) {
 		Map<String, Double> nameAndDistanceMapForEachDevice = null;
 
 		for (IotDevice iotDevice : iotDevices) {
@@ -26,12 +26,12 @@ public class DeviceParser {
 									iotDevice.getyCoordinate(), connectedIotDevices.getxCoordinate(),
 									connectedIotDevices.getyCoordinate());
 							nameAndDistanceMapForEachDevice.put(connectedIotDevices.getDeviceName(), shortPath);
+
 						}
 					}
-					connectedIotDevice.setNameAndDistanceMap(nameAndDistanceMapForEachDevice);
 				}
 			}
 		}
-		return iotDevices;
+
 	}
 }

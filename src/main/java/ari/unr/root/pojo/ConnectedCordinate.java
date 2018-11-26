@@ -11,18 +11,7 @@ public class ConnectedCordinate {
 	private List<Device> devices;
 	private String operationType;
 	private DeviceError deviceError;
-	private Map<String, Integer> nameAndDistanceMap = new HashMap<String, Integer>();
-
-
-	public Map<String, Integer> getUsersByCountry() {
-		return nameAndDistanceMap;
-	}
-
-
-	public void setUsersByCountry(Map<String, Integer> usersByCountry) {
-		this.nameAndDistanceMap = usersByCountry;
-	}
-
+	private Map<String, Double> nameAndDistanceMap = new HashMap<String, Double>();
 
 	public ConnectedCordinate() {
 	}
@@ -51,34 +40,28 @@ public class ConnectedCordinate {
 		this.deviceError = deviceError;
 	}
 
-
 	public Double getxCoordinate() {
 		return xCoordinate;
 	}
-
 
 	public void setxCoordinate(Double xCoordinate) {
 		this.xCoordinate = xCoordinate;
 	}
 
-
-	public Map<String, Integer> getNameAndDistanceMap() {
-		return nameAndDistanceMap;
-	}
-
-
-	public void setNameAndDistanceMap(Map<String, Integer> nameAndDistanceMap) {
-		this.nameAndDistanceMap = nameAndDistanceMap;
-	}
-
-
 	public Double getyCoordinate() {
 		return yCoordinate;
 	}
 
-
 	public void setyCoordinate(Double yCoordinate) {
 		this.yCoordinate = yCoordinate;
+	}
+
+	public Map<String, Double> getNameAndDistanceMap() {
+		return nameAndDistanceMap;
+	}
+
+	public void setNameAndDistanceMap(Map<String, Double> nameAndDistanceMap) {
+		this.nameAndDistanceMap = nameAndDistanceMap;
 	}
 
 }
