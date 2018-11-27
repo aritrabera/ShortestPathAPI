@@ -1,0 +1,182 @@
+[
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "R1",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 1.0
+          },
+ {
+            "deviceCount": "string",
+            "deviceName": "L1",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 1.0
+          },
+ {
+            "deviceCount": "string",
+            "deviceName": "M1",
+            "hobCount": 0,
+            "xCoordinate": 9.0,
+            "yCoordinate": 9.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "R1",
+    "deviceId": "R1",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 1.0,
+    "yCoordinate": 1.0
+  },
+{
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "L1",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 1.0
+          },
+{
+            "deviceCount": "string",
+            "deviceName": "M1",
+            "hobCount": 0,
+            "xCoordinate": 9.0,
+            "yCoordinate": 9.0
+          },
+{
+            "deviceCount": "string",
+            "deviceName": "R1",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 1.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "L1",
+    "deviceId": "L1",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 5.0,
+    "yCoordinate": 1.0
+  },
+{
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "M1",
+            "hobCount": 0,
+            "xCoordinate": 9.0,
+            "yCoordinate": 9.0
+          },
+{
+            "deviceCount": "string",
+            "deviceName": "L1",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 1.0
+          },
+{
+            "deviceCount": "string",
+            "deviceName": "R1",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 1.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "M1",
+    "deviceId": "M1",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 9.0,
+    "yCoordinate": 9.0
+  }
+]
