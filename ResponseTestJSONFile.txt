@@ -1,0 +1,167 @@
+[
+  {
+    "xCoordinate": 1,
+    "yCoordinate": 1,
+    "connectedCordinate": [
+      {
+        "yCoordinate": 0,
+        "xCoordinate": 0,
+        "devices": [
+          {
+            "deviceName": "R1",
+            "deviceCount": "string",
+            "xCoordinate": 1,
+            "yCoordinate": 1,
+            "hobCount": 0
+          },
+          {
+            "deviceName": "L1",
+            "deviceCount": "string",
+            "xCoordinate": 5,
+            "yCoordinate": 1,
+            "hobCount": 0
+          },
+          {
+            "deviceName": "M1",
+            "deviceCount": "string",
+            "xCoordinate": 9,
+            "yCoordinate": 9,
+            "hobCount": 0
+          }
+        ],
+        "operationType": "string",
+        "deviceError": {
+          "errorType": "string",
+          "errorDetails": "string"
+        },
+        "nameAndDistanceMap": {
+          "M1": 11.31,
+          "L1": 4,
+          "R1": 0
+        }
+      }
+    ],
+    "hobCount": 0,
+    "operationType": "initial",
+    "devices": {
+      "deviceName": "string",
+      "deviceCount": "string",
+      "xCoordinate": 0,
+      "yCoordinate": 0,
+      "hobCount": 0
+    },
+    "shoptestPath": "string",
+    "deviceID": "string",
+    "deviceId": "string"
+  },
+  {
+    "xCoordinate": 5,
+    "yCoordinate": 1,
+    "connectedCordinate": [
+      {
+        "yCoordinate": 0,
+        "xCoordinate": 0,
+        "devices": [
+          {
+            "deviceName": "L1",
+            "deviceCount": "string",
+            "xCoordinate": 5,
+            "yCoordinate": 1,
+            "hobCount": 0
+          },
+          {
+            "deviceName": "M1",
+            "deviceCount": "string",
+            "xCoordinate": 9,
+            "yCoordinate": 9,
+            "hobCount": 0
+          },
+          {
+            "deviceName": "R1",
+            "deviceCount": "string",
+            "xCoordinate": 1,
+            "yCoordinate": 1,
+            "hobCount": 0
+          }
+        ],
+        "operationType": "string",
+        "deviceError": {
+          "errorType": "string",
+          "errorDetails": "string"
+        },
+        "nameAndDistanceMap": {
+          "M1": 8.94,
+          "L1": 0,
+          "R1": 4
+        }
+      }
+    ],
+    "hobCount": 0,
+    "operationType": "initial",
+    "devices": {
+      "deviceName": "string",
+      "deviceCount": "string",
+      "xCoordinate": 0,
+      "yCoordinate": 0,
+      "hobCount": 0
+    },
+    "shoptestPath": "string",
+    "deviceID": "string",
+    "deviceId": "string"
+  },
+  {
+    "xCoordinate": 9,
+    "yCoordinate": 9,
+    "connectedCordinate": [
+      {
+        "yCoordinate": 0,
+        "xCoordinate": 0,
+        "devices": [
+          {
+            "deviceName": "M1",
+            "deviceCount": "string",
+            "xCoordinate": 9,
+            "yCoordinate": 9,
+            "hobCount": 0
+          },
+          {
+            "deviceName": "L1",
+            "deviceCount": "string",
+            "xCoordinate": 5,
+            "yCoordinate": 1,
+            "hobCount": 0
+          },
+          {
+            "deviceName": "R1",
+            "deviceCount": "string",
+            "xCoordinate": 1,
+            "yCoordinate": 1,
+            "hobCount": 0
+          }
+        ],
+        "operationType": "string",
+        "deviceError": {
+          "errorType": "string",
+          "errorDetails": "string"
+        },
+        "nameAndDistanceMap": {
+          "M1": 0,
+          "L1": 8.94,
+          "R1": 11.31
+        }
+      }
+    ],
+    "hobCount": 0,
+    "operationType": "initial",
+    "devices": {
+      "deviceName": "string",
+      "deviceCount": "string",
+      "xCoordinate": 0,
+      "yCoordinate": 0,
+      "hobCount": 0
+    },
+    "shoptestPath": "string",
+    "deviceID": "string",
+    "deviceId": "string"
+  }
+]
