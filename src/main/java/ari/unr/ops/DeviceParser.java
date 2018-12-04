@@ -42,7 +42,7 @@ public class DeviceParser {
                                     && null != connectedIotDevices.getxCoordinate()
                                     && null != connectedIotDevices.getyCoordinate()) {
 
-                                Double shortPath = TestAlgos.distanceBetweenTwoPoint(iotDevice.getxCoordinate(),
+                                Double shortPath = ShortestPathAlgo.distanceBetweenTwoPoint(iotDevice.getxCoordinate(),
                                         iotDevice.getyCoordinate(), connectedIotDevices.getxCoordinate(),
                                         connectedIotDevices.getyCoordinate());
                                 nameAndDistanceMapForEachDevice.put(connectedIotDevices.getDeviceName(), shortPath);
