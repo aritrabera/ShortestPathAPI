@@ -1,6 +1,7 @@
 package ari.unr.ops;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
 // A Java program for Dijkstra's
 // single source shortest path
@@ -18,7 +19,7 @@ class ShortestPathAlgo {
     // using adjacency matrix
     // representation
     public static void dijkstra(Double[][] adjacencyMatrix,
-                                 int startVertex)
+                                 int startVertex, List<String> nodeNameList)
     {
         int nVertices = adjacencyMatrix[0].length;
 
@@ -43,7 +44,7 @@ class ShortestPathAlgo {
 
         // Distance of source vertex from
         // itself is always 0
-        shortestDistances[startVertex] = 0.0;
+        shortestDistances[startVertex] = 0.0d;
 
         // Parent array to store shortest
         // path tree
@@ -78,7 +79,6 @@ class ShortestPathAlgo {
                     shortestDistance = shortestDistances[vertexIndex];
                 }
             }
-
             // Mark the picked vertex as
             // processed
             added[nearestVertex] = true;
@@ -103,7 +103,7 @@ class ShortestPathAlgo {
             }
         }
 
-        printSolution(startVertex, shortestDistances, parents);
+        printSolution(startVertex, shortestDistances, parents, nodeNameList);
     }
 
     // A utility function to print
@@ -111,7 +111,7 @@ class ShortestPathAlgo {
     // array and shortest paths
     private static void printSolution(int startVertex,
                                       Double[] distances,
-                                      int[] parents)
+                                      int[] parents, List<String> nodeNameList)
     {
         int nVertices = distances.length;
         System.out.print("Vertex\t Distance\tPath");
@@ -122,10 +122,12 @@ class ShortestPathAlgo {
         {
             if (vertexIndex != startVertex)
             {
-                System.out.print("\n" + startVertex + " -> ");
-                System.out.print(vertexIndex + " \t\t ");
+//                System.out.print("\n" + startVertex + " -> ");
+                System.out.print("\n" + nodeNameList.get(startVertex) + " -> ");
+                System.out.print(nodeNameList.get(vertexIndex) + " \t\t ");
                 System.out.print(distances[vertexIndex] + "\t\t");
-                printPath(vertexIndex, parents);
+                printPath(vertexIndex, parents, nodeNameList);
+                System.out.println();
             }
         }
     }
@@ -134,7 +136,7 @@ class ShortestPathAlgo {
     // from source to currentVertex
     // using parents array
     private static void printPath(int currentVertex,
-                                  int[] parents)
+                                  int[] parents, List<String> nodeNameList)
     {
 
         // Base case : Source node has
@@ -143,8 +145,8 @@ class ShortestPathAlgo {
         {
             return;
         }
-        printPath(parents[currentVertex], parents);
-        System.out.print(currentVertex + " ");
+        printPath(parents[currentVertex], parents, nodeNameList);
+        System.out.print(nodeNameList.get(currentVertex) + " ");
     }
 
 

@@ -4,25 +4,26 @@ import java.util.List;
 
 import ari.unr.ops.DeviceParser;
 import ari.unr.root.pojo.IotDevice;
+import ari.unr.root.pojo.ResponseIotDevice;
 
 public class ShortestPathWorkFlow {
 
 	public ShortestPathWorkFlow() {
 	}
 
-	public List<IotDevice> getShortestPathForAllDevices(List<IotDevice> iotDeviceList) {
+	public List<ResponseIotDevice> getShortestPathForAllDevices(List<IotDevice> iotDeviceList) {
 
-		List<IotDevice> iotDeviceListResults = DeviceParser.addDistanceToEachDevice(iotDeviceList);
+		List<ResponseIotDevice> responseIotDevice = DeviceParser.addDistanceToEachDevice(iotDeviceList);
 
-		return iotDeviceListResults;
+		return responseIotDevice;
 
 	}
 
-	public List<IotDevice> getShortestPathForOneDevice(List<IotDevice> iotDeviceList) {
+	public List<ResponseIotDevice> getShortestPathForOneDevice(List<IotDevice> iotDeviceList) {
 
-		List<IotDevice> iotDeviceListResults = DeviceParser.addDistanceToEachDevice(iotDeviceList);
+		List<ResponseIotDevice> responseIotDevice = DeviceParser.addDistanceToEachDevice(iotDeviceList);
 
-		return iotDeviceListResults;
+		return responseIotDevice;
 	}
 
 }
