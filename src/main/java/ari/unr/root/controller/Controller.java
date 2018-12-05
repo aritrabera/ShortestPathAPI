@@ -1,22 +1,15 @@
 package ari.unr.root.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.http.MediaType;
-import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
 import ari.unr.root.pojo.ConnectedCordinate;
 import ari.unr.root.pojo.IotDevice;
 import ari.unr.root.pojo.ResponseIotDevice;
 import ari.unr.workFlow.ShortestPathWorkFlow;
+import org.springframework.http.MediaType;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 public class Controller {
@@ -30,7 +23,7 @@ public class Controller {
 	@GetMapping(path = "/getCall", consumes = "application/json", produces = { MediaType.APPLICATION_JSON_VALUE,
 			MediaType.APPLICATION_XML_VALUE })
 	public String getCall(@RequestBody List<IotDevice> iotDevice) {
-		
+
 		IotDevice iotDevices = new IotDevice();
 		ConnectedCordinate connectedCordinates =  new ConnectedCordinate();
 		connectedCordinates.setxCoordinate(123.0);
@@ -47,22 +40,22 @@ public class Controller {
 		return "testIotDevice";
 	}
 
-	
+
 	@RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json", produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	@PostMapping(path = "/postCall")
 	public List<ResponseIotDevice> postCall(@RequestBody List<IotDevice> iotDevice) {
-		
+
 		// Check if the user has submitted initial form or moved a device to a new
 		// position
 		// if modeOfOperation = ***initial ***
 		// then follow initial workFlow for setting up initial devices with initial
-		// default coordinates and shortest path 
+		// default coordinates and shortest path
 		// else if modeOfOperation = ***reposition ***
 		// then follow second iteration of shortest path
 		List<ResponseIotDevice> ResponseIotDevice =  null;
 		String modeOfOperation = iotDevice.get(0).getOperationType();
-		
+
 		if (!iotDevice.isEmpty()) {
 			if (!StringUtils.isEmpty(modeOfOperation) && modeOfOperation.equalsIgnoreCase("initial")) {
 

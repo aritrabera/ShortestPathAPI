@@ -10,7 +10,7 @@ import java.util.*;
 public class DeviceParser {
 
     public static List<ResponseIotDevice> addDistanceToEachDevice(List<IotDevice> iotDevices) {
-        List<ResponseIotDevice> responseIotDevice = null;
+    	List<ResponseIotDevice> responseIotDevice = null;
         TreeMap<String, Double> nameAndDistanceMapForEachDevice = null;
         NavigableMap<String, Double> nmap = null;
         Double matrix[][]=null;
@@ -89,7 +89,7 @@ public class DeviceParser {
             System.out.println();
         }
         System.out.println(idList);
-        responseIotDevice = ShortestPathAlgo.dijkstra(matrix, 0, idList);
+        ShortestPathAlgo.dijkstra(matrix, 0, idList);
         return responseIotDevice;
     }
 }

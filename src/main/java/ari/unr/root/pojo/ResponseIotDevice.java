@@ -1,56 +1,68 @@
 package ari.unr.root.pojo;
 
+import java.util.List;
+
 public class ResponseIotDevice {
 
-	public ResponseIotDevice() {
+    public ResponseIotDevice() {
 
-	}
+    }
 
-	private String vertex;
+    private String startVertex;
 
-	public String getVertex() {
-		return vertex;
-	}
+    private String endVertex;
 
-	public void setVertex(String vertex) {
-		this.vertex = vertex;
-	}
+    public String getStartVertex() {
+        return startVertex;
+    }
 
-	public String getDistance() {
-		return distance;
-	}
+    public void setStartVertex(String startVertex) {
+        this.startVertex = startVertex;
+    }
 
-	public void setDistance(String distance) {
-		this.distance = distance;
-	}
+    public String getEndVertex() {
+        return endVertex;
+    }
 
-	public String getPath() {
-		return path;
-	}
+    public void setEndVertex(String endVertex) {
+        this.endVertex = endVertex;
+    }
 
-	public void setPath(String path) {
-		this.path = path;
-	}
+    public Double getDistance() {
+        return distance;
+    }
 
-	public Integer getHobCount() {
-		return hobCount;
-	}
+    public void setDistance(Double distance) {
+        this.distance = distance;
+    }
 
-	public void setHobCount(Integer hobCount) {
-		this.hobCount = hobCount;
-	}
+    public List<String> getPath() {
+        return path;
+    }
 
-	public DeviceError getDeviceError() {
-		return deviceError;
-	}
+    public void setPath(List<String> path) {
+        this.path = path;
+    }
 
-	public void setDeviceError(DeviceError deviceError) {
-		this.deviceError = deviceError;
-	}
+    public Integer getHobCount() {
+        return hobCount;
+    }
 
-	private String distance;
-	private String path;
-	private Integer hobCount;
-	private DeviceError deviceError;
+    public void setHobCount(Integer hobCount) {
+        this.hobCount = hobCount;
+    }
+
+    public DeviceError getDeviceError() {
+        return deviceError;
+    }
+
+    public void setDeviceError(DeviceError deviceError) {
+        this.deviceError = deviceError;
+    }
+
+    private Double distance;
+    private List<String> path;
+    private Integer hobCount;
+    private DeviceError deviceError;
 
 }

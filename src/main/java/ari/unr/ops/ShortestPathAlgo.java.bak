@@ -1,9 +1,6 @@
 package ari.unr.ops;
 
-import ari.unr.root.pojo.ResponseIotDevice;
-
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.List;
 
 // A Java program for Dijkstra's
@@ -21,10 +18,9 @@ class ShortestPathAlgo {
     // algorithm for a graph represented
     // using adjacency matrix
     // representation
-    public static List<ResponseIotDevice> dijkstra(Double[][] adjacencyMatrix,
+    public static void dijkstra(Double[][] adjacencyMatrix,
                                  int startVertex, List<String> nodeNameList)
     {
-        List<ResponseIotDevice> responseIotDeviceList = new ArrayList<ResponseIotDevice>();
         int nVertices = adjacencyMatrix[0].length;
 
         // shortestDistances[i] will hold the
@@ -107,18 +103,16 @@ class ShortestPathAlgo {
             }
         }
 
-        responseIotDeviceList = printSolution(startVertex, shortestDistances, parents, nodeNameList, responseIotDeviceList);
-        return responseIotDeviceList;
+        printSolution(startVertex, shortestDistances, parents, nodeNameList);
     }
 
     // A utility function to print
     // the constructed distances
     // array and shortest paths
-    private static List<ResponseIotDevice> printSolution(int startVertex,
+    private static void printSolution(int startVertex,
                                       Double[] distances,
-                                      int[] parents, List<String> nodeNameList, List<ResponseIotDevice> responseIotDeviceList)
+                                      int[] parents, List<String> nodeNameList)
     {
-        DecimalFormat decimalFormat = new DecimalFormat("#.##");
         int nVertices = distances.length;
         System.out.print("Vertex\t Distance\tPath");
 
@@ -126,45 +120,33 @@ class ShortestPathAlgo {
              vertexIndex < nVertices;
              vertexIndex++)
         {
-            ResponseIotDevice responseIotDevice = new ResponseIotDevice();
-            List<String> pathList = new ArrayList<String>();
             if (vertexIndex != startVertex)
             {
 //                System.out.print("\n" + startVertex + " -> ");
                 System.out.print("\n" + nodeNameList.get(startVertex) + " -> ");
-                responseIotDevice.setStartVertex(nodeNameList.get(vertexIndex));
                 System.out.print(nodeNameList.get(vertexIndex) + " \t\t ");
-                responseIotDevice.setEndVertex(nodeNameList.get(startVertex));
-                System.out.print(Double.valueOf(decimalFormat.format(distances[vertexIndex])) + "\t\t");
-                responseIotDevice.setDistance(Double.valueOf(decimalFormat.format(distances[vertexIndex])));
-                responseIotDevice.setPath(printPath(vertexIndex, parents, nodeNameList, pathList));
-                if(!pathList.isEmpty()){
-                    responseIotDevice.setHobCount(pathList.size()-1);
-                }
-//                System.out.println();
-                responseIotDeviceList.add(responseIotDevice);
+                System.out.print(distances[vertexIndex] + "\t\t");
+                printPath(vertexIndex, parents, nodeNameList);
+                System.out.println();
             }
         }
-        return responseIotDeviceList;
     }
 
     // Function to print shortest path
     // from source to currentVertex
     // using parents array
-    private static List<String> printPath(int currentVertex,
-                                  int[] parents, List<String> nodeNameList, List<String> pathList)
+    private static void printPath(int currentVertex,
+                                  int[] parents, List<String> nodeNameList)
     {
 
         // Base case : Source node has
         // been processed
         if (currentVertex == NO_PARENT)
         {
-            return new ArrayList<>();
+            return;
         }
-        printPath(parents[currentVertex], parents, nodeNameList, pathList);
-        pathList.add(nodeNameList.get(currentVertex));
+        printPath(parents[currentVertex], parents, nodeNameList);
         System.out.print(nodeNameList.get(currentVertex) + " ");
-        return pathList;
     }
 
 
@@ -172,6 +154,7 @@ class ShortestPathAlgo {
         double xDiff =  ((x1) - (x2));
         double yDiff = (y1) - (y2);
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
+
         return Double.valueOf(decimalFormat.format(Math.sqrt(xDiff * xDiff + yDiff * yDiff)));
 
 
