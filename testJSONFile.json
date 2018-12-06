@@ -1,5 +1,5 @@
 [
-  {
+{
     "connectedCordinate": [
       {
         "deviceError": {
@@ -9,24 +9,24 @@
         "devices": [
           {
             "deviceCount": "string",
-            "deviceName": "R1",
-            "hobCount": 0,
-            "xCoordinate": 1.0,
-            "yCoordinate": 1.0
-          },
- {
-            "deviceCount": "string",
-            "deviceName": "L1",
-            "hobCount": 0,
-            "xCoordinate": 5.0,
-            "yCoordinate": 1.0
-          },
- {
-            "deviceCount": "string",
-            "deviceName": "M1",
+            "deviceName": "Z1",
             "hobCount": 0,
             "xCoordinate": 9.0,
             "yCoordinate": 9.0
+          },
+		  {
+            "deviceCount": "string",
+            "deviceName": "Y2",
+            "hobCount": 0,
+            "xCoordinate": 8.0,
+            "yCoordinate": 9.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "Y3",
+            "hobCount": 0,
+            "xCoordinate": 9.0,
+            "yCoordinate": 8.0
           }
         ],
         "nameAndDistanceMap": {
@@ -44,8 +44,8 @@
         "yCoordinate": 0
       }
     ],
-    "deviceID": "R1",
-    "deviceId": "R1",
+    "deviceID": "Z1",
+    "deviceId": "Z1",
     "devices": {
       "deviceCount": "string",
       "deviceName": "string",
@@ -56,10 +56,10 @@
     "hobCount": 0,
     "operationType": "initial",
     "shoptestPath": "string",
-    "xCoordinate": 1.0,
-    "yCoordinate": 1.0
+    "xCoordinate": 9.0,
+    "yCoordinate": 9.0
   },
-{
+  {
     "connectedCordinate": [
       {
         "deviceError": {
@@ -69,23 +69,62 @@
         "devices": [
           {
             "deviceCount": "string",
-            "deviceName": "L1",
-            "hobCount": 0,
-            "xCoordinate": 5.0,
-            "yCoordinate": 1.0
-          },
-{
-            "deviceCount": "string",
-            "deviceName": "M1",
+            "deviceName": "Y3",
             "hobCount": 0,
             "xCoordinate": 9.0,
-            "yCoordinate": 9.0
+            "yCoordinate": 8.0
           },
-{
+		  {
             "deviceCount": "string",
-            "deviceName": "R1",
+            "deviceName": "Y4",
             "hobCount": 0,
-            "xCoordinate": 1.0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 5.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "Y3",
+    "deviceId": "Y3",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 9.0,
+    "yCoordinate": 8.0
+  },
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "X1",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
             "yCoordinate": 1.0
           }
         ],
@@ -104,8 +143,8 @@
         "yCoordinate": 0
       }
     ],
-    "deviceID": "L1",
-    "deviceId": "L1",
+    "deviceID": "X1",
+    "deviceId": "X1",
     "devices": {
       "deviceCount": "string",
       "deviceName": "string",
@@ -119,7 +158,7 @@
     "xCoordinate": 5.0,
     "yCoordinate": 1.0
   },
-{
+  {
     "connectedCordinate": [
       {
         "deviceError": {
@@ -129,21 +168,7 @@
         "devices": [
           {
             "deviceCount": "string",
-            "deviceName": "M1",
-            "hobCount": 0,
-            "xCoordinate": 9.0,
-            "yCoordinate": 9.0
-          },
-{
-            "deviceCount": "string",
-            "deviceName": "L1",
-            "hobCount": 0,
-            "xCoordinate": 5.0,
-            "yCoordinate": 1.0
-          },
-{
-            "deviceCount": "string",
-            "deviceName": "R1",
+            "deviceName": "X2",
             "hobCount": 0,
             "xCoordinate": 1.0,
             "yCoordinate": 1.0
@@ -164,8 +189,8 @@
         "yCoordinate": 0
       }
     ],
-    "deviceID": "M1",
-    "deviceId": "M1",
+    "deviceID": "X2",
+    "deviceId": "X2",
     "devices": {
       "deviceCount": "string",
       "deviceName": "string",
@@ -176,7 +201,308 @@
     "hobCount": 0,
     "operationType": "initial",
     "shoptestPath": "string",
-    "xCoordinate": 9.0,
+    "xCoordinate": 1.0,
+    "yCoordinate": 1.0
+  },
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "X3",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 3.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "X3",
+    "deviceId": "X3",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 1.0,
+    "yCoordinate": 3.0
+  },
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "X4",
+            "hobCount": 0,
+            "xCoordinate": 4.0,
+            "yCoordinate": 4.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "X4",
+    "deviceId": "X4",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 4.0,
+    "yCoordinate": 4.0
+  },
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "Y4",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 5.0
+          },
+		  {
+            "deviceCount": "string",
+            "deviceName": "Y1",
+            "hobCount": 0,
+            "xCoordinate": 3.0,
+            "yCoordinate": 3.0
+          },
+		  {
+            "deviceCount": "string",
+            "deviceName": "X1",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 1.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "X2",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 1.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "X3",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 3.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "X4",
+            "hobCount": 0,
+            "xCoordinate": 4.0,
+            "yCoordinate": 4.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "Y4",
+    "deviceId": "Y4",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 5.0,
+    "yCoordinate": 5.0
+  },
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "Y1",
+            "hobCount": 0,
+            "xCoordinate": 3.0,
+            "yCoordinate": 3.0
+          },
+		  {
+            "deviceCount": "string",
+            "deviceName": "X1",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 1.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "X2",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 1.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "X3",
+            "hobCount": 0,
+            "xCoordinate": 1.0,
+            "yCoordinate": 3.0
+          },
+          {
+            "deviceCount": "string",
+            "deviceName": "X4",
+            "hobCount": 0,
+            "xCoordinate": 4.0,
+            "yCoordinate": 4.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "Y1",
+    "deviceId": "Y1",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 3.0,
+    "yCoordinate": 3.0
+  },
+  {
+    "connectedCordinate": [
+      {
+        "deviceError": {
+          "errorDetails": "string",
+          "errorType": "string"
+        },
+        "devices": [
+          {
+            "deviceCount": "string",
+            "deviceName": "Y2",
+            "hobCount": 0,
+            "xCoordinate": 8.0,
+            "yCoordinate": 9.0
+          },
+		  {
+            "deviceCount": "string",
+            "deviceName": "Y4",
+            "hobCount": 0,
+            "xCoordinate": 5.0,
+            "yCoordinate": 5.0
+          }
+        ],
+        "nameAndDistanceMap": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "operationType": "string",
+        "usersByCountry": {
+          "additionalProp1": 0,
+          "additionalProp2": 0,
+          "additionalProp3": 0
+        },
+        "xCoordinate": 0,
+        "yCoordinate": 0
+      }
+    ],
+    "deviceID": "Y2",
+    "deviceId": "Y2",
+    "devices": {
+      "deviceCount": "string",
+      "deviceName": "string",
+      "hobCount": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 0
+    },
+    "hobCount": 0,
+    "operationType": "initial",
+    "shoptestPath": "string",
+    "xCoordinate": 8.0,
     "yCoordinate": 9.0
-  }
+  }  
+
 ]
